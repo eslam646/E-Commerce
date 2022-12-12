@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchProductsActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Here"
+        android:iconifiedByDefault="false"
+        android:id="@+id/searchView"></androidx.appcompat.widget.SearchView>
+    <ImageButton
+        android:id="@+id/search_voice"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_setting"
+        android:scaleType="fitEnd"/>
+
+    <Button
+        android:id="@+id/scanner_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scanner"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cart_next_process_btn"/>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_sttings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary1">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/settings_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    />
+                <TextView
+                    android:id="@+id/settings_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+                    android:textAlignment="viewEnd"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="15dp"
+                    />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <EditText
+        android:id="@+id/settings_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_sttings"
+        android:hint="Phone Number"
+
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="15dp"
+        />
+    <EditText
+        android:id="@+id/settings_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_phone_number"
+        android:hint="Name"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        />
+    <EditText
+        android:id="@+id/settings_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_name"
+        android:hint="Address"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        />
+
+</RelativeLayout>
